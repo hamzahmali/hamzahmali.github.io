@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dash Knight – P2 Gold</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <h1>Dash Knight</h1>
+  <h2>By Hamzah Ali</h2>
+  <h3>EECS 494 – P2 Gold</h3>
+
+  <p>
+    <em>Dash Knight</em> is a top-down action game built in Unity. The core mechanic is a
+    directional dash that can phase through enemies and hazards, while also enabling
+    aggressive movement-based combat. The game emphasizes fast decisions, clean feedback,
+    and tight control.
+  </p>
+
+  <p>
+    <a href="https://hamzahali.itch.io/dash-knight" target="_blank">
+      ▶ Play Online (itch.io)
+    </a>
+    <br>
+    <!-- Optional: if you also host a downloadable zip in your repo -->
+    <!-- <a href="../downloads/DashKnight_Windows.zip" download>Download (Windows)</a> -->
+  </p>
+
+  <hr>
+
+  <h3>Core Features</h3>
+
+  <h4>Directional Phase Dash</h4>
+  <p>
+    A fast dash triggered with Shift + a direction. During the dash, the player can phase
+    through enemies and obstacles, and a dash
+    hitbox activates to damage enemies if you pass through them.
+  </p>
+  <!-- <img src="../media/dash_knight_dash.gif" alt="Dash mechanic demo"> -->
+
+  <h4>Combat Feedback: Hit Flash + Hit Stop</h4>
+  <p>
+    To make hits feel impactful, I implemented hit flash and particle effects.
+  </p>
+  <!-- <img src="../media/dash_knight_hitstop.gif" alt="Hit feedback demo"> -->
+
+  <h4>Enemy AI + Animator-Driven Attacks</h4>
+  <p>
+    Enemies chase the player using Rigidbody-based movement and attack using animation-driven
+    hitboxes. Animation events toggle attack colliders on/off so damage timing matches the
+    visual swing.
+  </p>
+  <!-- <img src="../media/dash_knight_enemy_attack.gif" alt="Enemy attack demo"> -->
+
+  <h4>Game Loop and Restart</h4>
+  <p>
+    The game supports a complete loop: start from the main menu, play through the level,
+    and return/restart cleanly without needing to stop the Unity process.
+  </p>
+
+  <hr>
+
+  <h3>Technology Used</h3>
+  <ul>
+    <li>Unity</li>
+    <li>C#</li>
+  </ul>
+
+  <hr>
+
+  <p>
+    <a href="../">← Back to Main Portfolio</a>
+  </p>
+
+  <p>© Hamzah Ali – EECS 494</p>
+
+</body>
+</html>
